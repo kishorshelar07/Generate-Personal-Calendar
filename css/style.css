@@ -1,0 +1,383 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240, 119, 208);
+  } */
+
+/* .calendar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 3px auto;
+    width: 80%;
+    border: green;
+    align-items: center;
+  }
+  .month {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+
+  #calendar-input{
+    padding-left: 25%;
+    margin-top: 40px;
+    
+  } */
+/* .btn-primary{
+    background-color: rgb(190, 72, 249);
+    margin-left: 20px;
+  }
+  .btn-primary:hover{
+    box-shadow:  5px 3px 5px 3px rgb(253, 202, 107);
+
+  } */
+/* h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+    font-style: italic;
+  }
+  label{
+    font-weight: bold;
+    font-size: 20px;
+  }
+  input{
+    background-color: rgb(213, 234, 243);
+    border-radius: 5px;
+    border: none;
+    
+  }
+  #calendar{
+    background-color: rgba(22, 196, 208, 0.055);
+    
+  }
+  td {
+    border: 1px solid black;
+  } */
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15px;
+  font-style: italic;
+}
+
+.image {
+  height: 400px;
+  width: 100%;
+}
+#container {
+  margin-top: 40px;
+}
+
+.content {
+  border: 2px solid black;
+}
+
+.result {
+  background-color: #131313;
+}
+
+/* input design */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out, margin 0.3s ease;
+  -webkit-transition: all 0.3s ease-in-out, margin 0.3s ease;
+}
+
+/* INPUT CONTAINER  */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  min-width: 217px;
+  height: 60px;
+  padding: 5px 10px 10px 10px;
+  background: #fff;
+  border-radius: 8px;
+  filter: drop-shadow(0px 0px 3px #000);
+  -webkit-filter: drop-shadow(0px 0px 3px #000);
+  overflow: hidden;
+  cursor: pointer;
+}
+.input-container:hover,
+.input-container:focus,
+.input-container:active {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.input-container label {
+  position: relative;
+  width: 100%;
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  line-height: 20px;
+  color: #09f;
+  margin-left: 2px;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.input-container input {
+  position: relative;
+  align-items: center;
+  width: auto;
+  height: auto;
+  font-family: "Lekton", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 0.05em;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin-left: 0px;
+}
+
+/* BUTTON CONTAINER */
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  min-width: 197px;
+  height: 65px;
+  padding: 1px;
+  padding-bottom: 2px;
+  background: #09f;
+  border-radius: 8px;
+  filter: drop-shadow(0px 0px 3px #000);
+  -webkit-filter: drop-shadow(0px 0px 3px #000);
+
+  cursor: pointer;
+}
+.button-container:hover,
+.button-container:focus {
+  background: #09f;
+  filter: drop-shadow(0px 0px 3px #09f);
+  -webkit-filter: drop-shadow(0px 0px 3px #09f);
+}
+
+/* -- button -- */
+.button-container .button {
+  position: relative;
+  width: 100%;
+  min-height: 63px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  background: #fff;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+/* -- button ok -- */
+.button-container .button.ok {
+  background: #131313;
+  color: #fff;
+}
+.button-container:hover .button.ok:hover {
+  background: #131313;
+  color: #09f;
+  text-shadow: 0px 0px 10px #09f;
+}
+
+/* RESERVATION BOX */
+.reservation-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-center;
+  gap: 20px;
+  height: auto;
+  padding: 20px;
+  border-radius: 7px;
+  background-color: transparent;
+}
+.reservation-box .static {
+  position: relative;
+  display: flex;
+  align-items: center;
+  float: left;
+  width: auto;
+  margin-right: 20px;
+  margin-left: 250px;
+}
+.reservation-box .flex {
+  position: relative;
+  display: flex;
+  float: left;
+  flex-direction: table;
+  align-items: center;
+  gap: 20px;
+  width: auto;
+  margin-left: 30px;
+}
+
+.prt-btn {
+  display: none;
+}
+
+.result6 {
+  border: 2px solid black;
+}
+
+#button-dis {
+  display: none;
+}
+
+/* 
+Dashboard CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.side-navbar {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  margin-left: -300px;
+  background-color: #100901;
+  transition: 0.5s;
+}
+
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+  background-color: #ffffff26;
+  cursor: pointer;
+}
+
+.my-container {
+  transition: 0.4s;
+}
+
+.active-nav {
+  margin-left: 0;
+}
+
+/* for main section */
+.active-cont {
+  margin-left: 250px;
+}
+
+#menu-btn {
+  background-color: #100901;
+  color: #fff;
+  margin-left: -62px;
+}
+
+.my-container input {
+  border-radius: 2rem;
+  padding: 2px 20px;
+}
+
+#calendar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.month {
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  width: calc(25% - 20px);
+}
+.month h4 {
+  margin: 0;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  width: 14.28%;
+  text-align: center;
+  padding: 5px 0;
+}
+th {
+  background-color: #e5e1e1;
+  color: #333;
+}
+td {
+  border: 1px solid #ddd;
+}
+td:hover {
+  background-color: #f4f4f9;
+}
+#quoteDisplay {
+  margin: 20px 0;
+  font-size: 1.2em;
+  color: #1a2a6b;
+  text-align: center;
+}
+#image {
+  display: none;
+  text-align: center;
+}
+#image img {
+  height: 400px;
+  width: 100%;
+}
+#button-dis {
+  display: none;
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: #1a2a6b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#year {
+  display: none;
+}
+#quoteDisplay {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#year-header {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* Print Page  */
+
+@media print {
+  .hide-on-print {
+    display: none !important;
+  }
+}
